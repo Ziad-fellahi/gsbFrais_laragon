@@ -2,7 +2,7 @@
 
 <div class="encadre">
         <p>
-            Etat :
+            Etat : date
 
 
         </p>
