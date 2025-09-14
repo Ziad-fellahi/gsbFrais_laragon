@@ -1,11 +1,8 @@
-﻿
-<h3>Fiche de frais du mois <?php echo $numMois."-".$numAnnee?> : 
-    </h3>
+﻿<h3>Fiche de frais du mois <?php echo $numMois."-".$numAnnee?> :</h3>
     <div class="encadre">
     <p>
         Etat : <?php echo $libEtat?> depuis le <?php echo $dateModif?> <br> Montant validé : <?php echo $montantValide?>
-              
-                     
+
     </p>
   	
   	<table class="listeLegere">
@@ -33,18 +30,3 @@
 		?>
     </table>
   </div>
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
