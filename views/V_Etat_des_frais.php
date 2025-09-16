@@ -1,30 +1,29 @@
-<h2> Etat de tout les frais par mois <?php echo $numMois "-" $numAnnee; ?> :</h2>
-
+<h3>Fiche de frais du mois <?php echo $numMois."-".$numAnnee?> :</h3>
 <div class="encadre">
     <p>
-        Etat : <?php echo $libEtat?> depuis le <?php echo $dateModif ?> <br> Montant validé <?php echo $montantValide?>
+        Etat : <?php echo $libEtat?> depuis le <?php echo $dateModif?> <br> Montant validé : <?php echo $montantValide?>
+
     </p>
 
-        <table class="listeLegere">
-            <h3>période </h3>
-            <table>
-                <tr>
-                    <th class="numéro">Numéro de visiteur</th>
-                    <th class = "montant">Montant</th>
-                </tr>
-
+    <table class="listeLegere">
+        <caption>Descriptif des éléments hors forfait -<?php echo $nbJustificatifs ?> justificatifs reçus -
+        </caption>
+        <tr>
+            <th class="Numéro du visiteur">Numéro du visiteur</th>
+            <th class='montant'>Montant</th>
+        </tr>
+        <?php
+        foreach ( $lesFraisHorsForfait as $unFraisHorsForfait )
+        {
+            $numvisiteur = $unFraisHorsForfait['date'];
+            $montant = $unFraisHorsForfait['montant'];
+            ?>
+            <tr>
+                <td><?php echo $numvisiteur ?></td>
+                <td><?php echo $montant ?></td>
+            </tr>
             <?php
-                foreach ( $lesFraisForfait as $unFraisForfait )
-                {
-                 $numvisiteur = $unfraisForfait['numéro visiteur'];
-                 $montant = $unfraisForfait['montant'];
-
-                 ?>
-                    <tr>
-                        <td><?php echo $numvisiteur ?></td>
-                        <td><?php echo $montant ?></td>
-                    </tr>
-                <?php
-                }
-                ?>
-                </table>
+        }
+        ?>
+    </table>
+</div>

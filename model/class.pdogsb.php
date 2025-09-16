@@ -135,7 +135,27 @@ class PdoGsb{
         $laLigne = $res->fetch();
         return $laLigne;
 
+
     }
 
+    public function getLesInfos()
+    {
+
+
+    }
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
 

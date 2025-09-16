@@ -16,7 +16,7 @@
 
 
         <li class="Etat de tous les frais par mois">
-            <a href="index.php?uc=etat_des_frais" title="Etat de tous les frais par mois">Etat de tous les frais par mois</a>
+            <a href="index.php?uc=etat_des_frais&action=selectionnerMois" title="Etat de tous les frais par mois">Etat de tous les frais par mois</a>
         </li>
 
 

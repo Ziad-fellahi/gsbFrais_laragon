@@ -5,6 +5,14 @@ require_once 'model/class.pdogsb.php';
 include 'views/layout/vue_entete.php';
 
 
+
+
+
+
+
+
+
+
 require_once 'doc/fct.inc.php';
 // connexion à la base de données
 $pdo = PdoGsb::getPdoGsb();
@@ -32,5 +40,11 @@ switch ($uc) {
         break;
     }
 }
+
+
+
+
+
+
 
 include 'views/layout/vue_pied.php';
